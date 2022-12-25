@@ -78,9 +78,9 @@ export BASEURL=`eval echo ${BASEURL}`
 
 # Set up the rest of the variables needed for the tests.
 export DBHOST=127.0.0.1
-export DBNAME=${APP}-${BRANCH}
-export DBUSERNAME=${APP}-ci
-export DBPASSWORD=${APP}-ci
+export DBNAME=${APP}_${BRANCH}
+export DBUSERNAME=${APP}_ci
+export DBPASSWORD=${APP}_ci
 export FILESDIR=files
 
 # Export Cypress equivalents
