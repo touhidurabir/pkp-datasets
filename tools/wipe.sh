@@ -17,4 +17,4 @@ ${SCRIPT_DIR}/recreatedb.sh
 
 # Remove the cache, public files, and journal files; prep a fresh config file
 rm -rf cache/*.css cache/*.php files/* public/*
-cp config.TEMPLATE.inc.php config.inc.php
+# cp config.TEMPLATE.inc.php config.inc.php

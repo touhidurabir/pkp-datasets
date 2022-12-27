@@ -38,7 +38,7 @@ export BRANCH=$2
 export DBTYPE=$3
 
 # A URL where your application can be seen (you can use variables here, escaping the $)
-export BASEURL="http://localhost/git/\${APP}-\${BRANCH}"
+export BASEURL="http://\${APP}-\${BRANCH}.test"
 
 # Validate the app
 case "$APP" in
@@ -78,10 +78,10 @@ export BASEURL=`eval echo ${BASEURL}`
 
 # Set up the rest of the variables needed for the tests.
 export DBHOST=127.0.0.1
-export DBNAME=${APP}_${BRANCH}
-export DBUSERNAME=${APP}_ci
-export DBPASSWORD=${APP}_ci
-export FILESDIR=files
+export DBNAME=${APP}-${BRANCH}
+export DBUSERNAME=${APP}-ci
+export DBPASSWORD=${APP}-ci
+export FILESDIR="/Users/abir/Sites/code/files"
 
 # Export Cypress equivalents
 export CYPRESS_BASE_URL=${BASEURL}
