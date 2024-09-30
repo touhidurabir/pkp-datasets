@@ -55,6 +55,7 @@ case "$BRANCH" in
 	"stable-3_1_2") ;;
 	"stable-3_3_1") ;;
 	"stable-3_3_0") ;;
+	"stable-3_4_0") ;;
 	"stable-3_2_1") ;;
 	"stable-3_2_0") ;;
 	"stable-3_4_0") ;;
@@ -78,10 +79,12 @@ export BASEURL=`eval echo ${BASEURL}`
 
 # Set up the rest of the variables needed for the tests.
 export DBHOST=127.0.0.1
-export DBNAME=${APP}-${BRANCH}
+# export DBNAME=${APP}-${BRANCH}
+export DBNAME="ojs-test"
 export DBUSERNAME=${APP}-ci
 export DBPASSWORD=${APP}-ci
-export FILESDIR="/Users/abir/Sites/code/files"
+# export FILESDIR="/Users/abir/Sites/code/files"
+export FILESDIR="/Users/abir/Sites/project-files/pkp-ojs/tests"
 
 # Export Cypress equivalents
 export CYPRESS_BASE_URL=${BASEURL}

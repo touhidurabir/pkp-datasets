@@ -16,7 +16,8 @@ DATA_BRANCH=$1
 # If a data branch was not specified, use the application branch.
 if [ "${DATA_BRANCH}" == "" ]
 then
-	DATA_BRANCH="${BRANCH}"
+	# DATA_BRANCH="${BRANCH}"
+	DATA_BRANCH="main"
 fi
 
 DUMP_FILE="${APP}/${DATA_BRANCH}/${DBTYPE_SYMBOLIC}/database.sql"
