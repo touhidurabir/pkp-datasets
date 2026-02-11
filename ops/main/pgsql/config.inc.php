@@ -26,7 +26,7 @@
 
 ; An application-specific key that is required for the app to run
 ; Internally this is used for any encryption (specifically cookie encryption if enabled)
-app_key = "base64:HYKGbOW5ETRbx1bU29BkGXvLwGxGZ2OyJ6De4GnMoTI="
+app_key = "base64:VpIfZXIVktRA+8Ng2tLSbHY69hD7AAYirGUlVqM0Ibc="
 
 ; Set this to On once the system has been installed
 ; (This is generally done automatically by the installer)
@@ -271,6 +271,9 @@ session_check_ip = On
 ; NOTE: This hashing method is deprecated, but necessary to permit gradual
 ; migration of old password hashes.
 encryption = sha1
+
+; When set to On, expire cookie-based sessions upon closing the browser window.
+session_expire_on_close = Off
 
 ; The unique salt to use for generating password reset hashes
 salt = "YouMustSetASecretKeyHere!!"
